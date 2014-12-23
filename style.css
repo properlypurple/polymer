@@ -1,0 +1,195 @@
+/**
+ * Theme Name: Polymer
+ * Theme URI: http://magikpress.com/themes/polymer
+ * Description: A Child Theme for Stargazer inpired by material design
+ * Version: 0.1
+ * Author: Gaurav Pareek
+ * Author URI: http://grv.rocks
+ * Text Domain: polymer
+ * Tags: one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready, white, light
+ * License: GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template: stargazer
+ */
+
+ /* Based on Kepler theme https://wordpress.org/themes/kepler */
+ /* Thanks to Justin Tadlock, Sami Keijonen, and Ruairi Phelan. I have literally tweaked their code, even this sentence */
+
+
+.font-headlines,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#site-title { 
+	font-weight: 300;
+	font-family: 'Roboto Condensed', 'Opens Sans', sans-serif;
+}
+
+.font-primary, 
+body, 
+input, 
+textarea, 
+.label-checkbox, 
+.label-radio, 
+.required, 
+#site-description, 
+#reply-title small {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+
+.widget-title > .wrap,
+#reply-title > .wrap,
+#comments-number > .wrap { font-weight: 400; }
+
+/* Container color. */
+#container > .wrap  {
+	background: #fff;
+	background: rgba( 255,255,255,0.95 );
+}
+
+#site-title {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+#site-description {
+	font-family: 'Roboto Condensed', serif;
+	font-style: none;
+}
+
+.header-image {
+	box-shadow: 0px 6px 15px -6px rgba(0, 0, 0, 0.5);
+}
+
+.entry-content a {
+	color: #349F8C;
+}
+
+.widget a {
+	color: #349F8C;
+}
+
+/* Primary menu color in all screen aizes. */
+#menu-primary, 
+#menu-primary .search-form > div, 
+#footer, 
+.audio-shortcode-wrap, 
+.media-shortcode-extend .media-info, 
+.media-info-toggle, 
+.entry-content .media-info-toggle, 
+.media-info-toggle:hover, 
+.media-info-toggle:focus, 
+.wp-audio-shortcode.mejs-container, 
+.mejs-controls, 
+.mejs-volume-button .mejs-volume-slider, 
+.mejs-overlay-play .mejs-overlay-button:after, 
+.mejs-time-rail .mejs-time-float, 
+.wp-playlist-dark {
+	background: #349F8C;
+	color: #fafafa;
+	box-shadow: 0 3px 12px 0px rgba(0,0,0,0.35);
+}
+
+/* Primary and secondary menu styles in narrow screen. */
+@media screen and (max-width: 799px) {
+
+	.custom-background #container > .wrap {
+		margin-top: 0;
+	}
+
+	#menu-primary li a,
+	#menu-secondary li a,
+	#menu-secondary .menu-toggle button  {
+		background: #349F8C;
+		border-color: #349F8C;
+	}
+
+	#menu-primary li a:hover,
+	#menu-primary li a:active,
+	#menu-primary li a:focus,
+	#menu-secondary li a:hover,
+	#menu-secondary li a:active,
+	#menu-secondary li a:focus {
+		background: #2F8F7E;
+	}
+
+	#menu-primary li.current-menu-item > a,
+	#menu-secondary li.current-menu-item > a {
+		background: #349F8C;
+	}
+
+}
+
+/* Primary and secondary menu styles in larger screens. */
+@media only screen and (min-width: 800px) {
+
+
+	#menu-primary ul ul {
+		top: 51px;
+	}
+	#menu-secondary ul ul {
+		top: 40px;
+	}
+	
+	#menu-primary ul ul li a:hover, 
+	#menu-secondary ul ul li a:hover, 
+	#menu-primary ul ul li a:focus, 
+	#menu-secondary ul ul li a:focus {
+		background-color: #2f8f7e;
+	}
+	
+	
+	#menu-primary li li a,
+	#menu-secondary li li a,
+	#menu-primary .search-form > div {
+		background: #349F8C;
+	}
+
+	#menu-primary li li a,
+	#menu-secondary li li a {
+		border-top-color: #349F8C;
+	}
+
+	#menu-primary li li a:hover,
+	#menu-secondary li li a:hover {
+		background: #349F8C;
+	}
+
+	.menu li > ul::before {
+		border-bottom-color: #349F8C;
+	}
+	.ltr .menu li li > ul::before {
+		border-right-color: #349F8C;
+	}
+	.rtl .menu li li > ul::before {
+		border-left-color: #349F8C;
+	}
+
+}
+
+.display-header-text header#header {
+	box-shadow: 0 0px 16px 0px rgba(0,0,0,0.1);
+}
+
+#main {
+	box-shadow: 0 5px 16px 0px rgba(0,0,0,0.1);
+	font-weight: 300;
+}
+
+
+#menu-social li a::before {
+	position:relative;
+	display:inline-block;
+	text-decoration:none;
+	padding: 4px 4px 2px;
+	background: #fff;
+	border-radius: 2px;
+}
+
+#menu-social li a:hover:before {
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+}

@@ -1,4 +1,9 @@
-polymer-wordpress-theme
-=======================
+##Polymer
+A Child Theme for Hybrid Core's Stargazer
 
-Polymer: A child theme for Stargazer WordPress theme
+
+###Credits
+- Justin Tadlock for [Stargazer](https://wordpress.org/themes/stargazer)
+- Ruairi Phelan for [Kepler](https://wordpress.org/themes/kepler)
+- [Midhun Harikumar](http://midhunhk.blogspot.in/2014/07/android-l-release-artwork.html) for the header images, used under CC by 4.0
+

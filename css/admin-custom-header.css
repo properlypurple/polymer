@@ -1,0 +1,12 @@
+#site-title { font-weight: 300; }
+
+	#site-title {
+	    font-size: 2em; /* Intentionally using "em" here since the root element is different. */
+	    font-weight: 400;
+	    font-family: 'Roboto Condensed', serif;
+	}
+	
+	#site-description {
+	    font-family: 'Roboto Condensed', serif;
+	    font-style: none;
+}
