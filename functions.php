@@ -85,6 +85,8 @@ unregister_default_headers(
 	/* Change primary color. */
 	add_filter( 'theme_mod_color_primary', 'polymer_primary_color' );
 	
+	/* Add custom stylesheets. */
+	add_action( 'wp_enqueue_scripts', 'polymer_enqueue_styles' );
 }
 
 /**
@@ -96,7 +98,17 @@ unregister_default_headers(
  * @return string
  */
 function polymer_primary_color( $color ) {
-
 	return $color ? $color : '349F8C';
-	
+}
+
+/**
+* Loads custom stylesheets for the theme.
+*
+* @since  1.0.0
+* @access public
+* @return void
+*/
+function polymer_enqueue_styles() {
+	wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,400italic');
+	wp_enqueue_style( 'googleFonts');
 }
