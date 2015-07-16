@@ -50,9 +50,9 @@ function polymer_theme_setup() {
 	 * Un-Register default Parent Theme headers for the child theme.
 	 * @since 0.1.1
 	 */
-unregister_default_headers(
-	array( 'horizon', 'orange-burn', 'planets-blue', 'planet-burst', 'space-splatters' )
-);
+  unregister_default_headers(
+	  array( 'horizon', 'orange-burn', 'planets-blue', 'planet-burst', 'space-splatters' )
+  );
 
 	/*
 	 * Registers default headers for the child theme.
@@ -66,25 +66,13 @@ unregister_default_headers(
 				'thumbnail_url' => '%2$s/images/headers/material1-thumb.jpg',
 				/* Translators: Header image description. */
 				'description'   => __( 'Material1', 'polymer' )
-			),
-			'material2' => array(
-				'url'           => '%2$s/images/headers/material2.jpg',
-				'thumbnail_url' => '%2$s/images/headers/material2-thumb.jpg',
-				/* Translators: Header image description. */
-				'description'   => __( 'Material2', 'polymer' )
-			),
-			'material3' => array(
-				'url'           => '%2$s/images/headers/material3.jpg',
-				'thumbnail_url' => '%2$s/images/headers/material3-thumb.jpg',
-				/* Translators: Header image description. */
-				'description'   => __( 'Material3', 'polymer' )
 			)
 		)
 	);
 
 	/* Change primary color. */
 	add_filter( 'theme_mod_color_primary', 'polymer_primary_color' );
-	
+
 	/* Add custom stylesheets. */
 	add_action( 'wp_enqueue_scripts', 'polymer_enqueue_styles' );
 }
