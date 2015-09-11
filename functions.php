@@ -42,7 +42,7 @@ function polymer_theme_setup() {
 	'custom-background',
 	array(
 		'default-color' => 'eeeeee',
-		'default-image' => '',
+		'default-image' => get_stylesheet_directory_uri() . '/images/headers/material1.jpg',
 	));
 
 
