@@ -19,6 +19,7 @@
 
 /* Adds the child theme setup function to the 'after_setup_theme' hook. */
 add_action( 'after_setup_theme', 'polymer_theme_setup', 11 );
+add_action( 'after_setup_theme', 'polymer_unregister_default_headers', 16 );
 
 /**
  * Setup function.  All child themes should run their setup within this function.  The idea is to add/remove 
@@ -46,15 +47,6 @@ function polymer_theme_setup() {
 		'default-image' => '',
 	));
 
-
-	/**
-	 * Un-Register default Parent Theme headers for the child theme.
-	 * @since 0.1.1
-	 */
-  unregister_default_headers(
-	  array( 'horizon', 'orange-burn', 'planets-blue', 'planet-burst', 'space-splatters' )
-  );
-
 	/*
 	 * Registers default headers for the child theme.
 	 * @since 0.1.0
@@ -76,6 +68,16 @@ function polymer_theme_setup() {
 
 	/* Add custom stylesheets. */
 	add_action( 'wp_enqueue_scripts', 'polymer_enqueue_styles' );
+}
+
+function polymer_unregister_default_headers() {
+		/**
+	 * Un-Register default Parent Theme headers for the child theme.
+	 * @since 0.1.1
+	 */
+  unregister_default_headers(
+	  array( 'horizon', 'orange-burn', 'planets-blue', 'planet-burst', 'space-splatters' )
+  );
 }
 
 /**
