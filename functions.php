@@ -36,13 +36,14 @@ function polymer_theme_setup() {
 	array(
 		'default-image'      => '',
 		'default-text-color' => '272727',
+		'default-image' => get_stylesheet_directory_uri() . '/images/headers/material1.jpg'
 	));
 
 	add_theme_support(
 	'custom-background',
 	array(
 		'default-color' => 'eeeeee',
-		'default-image' => get_stylesheet_directory_uri() . '/images/headers/material1.jpg',
+		'default-image' => '',
 	));
 
 
