@@ -21,11 +21,13 @@
 add_action( 'after_setup_theme', 'polymer_theme_setup', 11 );
 add_action( 'after_setup_theme', 'polymer_unregister_default_headers', 16 );
 
+include_once('inc/colors.php');
+
 /**
- * Setup function.  All child themes should run their setup within this function.  The idea is to add/remove 
+ * Setup function.  All child themes should run their setup within this function.  The idea is to add/remove
  * filters and actions after the parent theme has been set up.  This function provides you that opportunity.
  *
- * @since  1.0
+ * @since  0.1
  * @access public
  * @return void
  */
@@ -68,12 +70,13 @@ function polymer_theme_setup() {
 
 	/* Add custom stylesheets. */
 	add_action( 'wp_enqueue_scripts', 'polymer_enqueue_styles' );
+
 }
 
 function polymer_unregister_default_headers() {
 		/**
 	 * Un-Register default Parent Theme headers for the child theme.
-	 * @since 0.1.1
+	 * @since 0.1
 	 */
   unregister_default_headers(
 	  array( 'horizon', 'orange-burn', 'planets-blue', 'planet-burst', 'space-splatters' )
@@ -83,7 +86,7 @@ function polymer_unregister_default_headers() {
 /**
  * Change primary color
  *
- * @since 1.0
+ * @since 0.1
  * @access public
  * @param  string  $hex
  * @return string
@@ -95,7 +98,7 @@ function polymer_primary_color( $color ) {
 /**
 * Loads custom stylesheets for the theme.
 *
-* @since  1.0.0
+* @since  0.1
 * @access public
 * @return void
 */
