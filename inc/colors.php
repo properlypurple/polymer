@@ -12,7 +12,7 @@ function polymer_wp_head_callback() {
 	$stylesheet = get_stylesheet();
 
 	/* Get the cached style. */
-	$style = wp_cache_get( "{$stylesheet}_custom_colors" );
+	$style = wp_cache_get( "{$stylesheet}_custom_colors_2" );
 
 	/* If the style is available, output it and return. */
 	if ( !empty( $style ) ) {
@@ -23,10 +23,10 @@ function polymer_wp_head_callback() {
 	$style = polymer_get_primary_styles();
 
 	/* Put the final style output together. */
-	$style = "\n" . '<style type="text/css" id="custom-colors-css">' . trim( $style ) . '</style>' . "\n";
+	$style = "\n" . '<style type="text/css" id="custom-colors-css-2">' . trim( $style ) . '</style>' . "\n";
 
 	/* Cache the style, so we don't have to process this on each page load. */
-	wp_cache_set( "{$stylesheet}_custom_colors", $style );
+	wp_cache_set( "{$stylesheet}_custom_colors_2", $style );
 
 	/* Output the custom style. */
 	echo $style;
@@ -129,7 +129,7 @@ function polymer_get_primary_styles() {
  * @return void
  */
 function polymer_cache_delete() {
-	wp_cache_delete( get_stylesheet() . '_custom_colors' );
+	wp_cache_delete( get_stylesheet() . '_custom_colors_2' );
 }
 
 
