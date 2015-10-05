@@ -5,7 +5,7 @@
  * All style changes should be in child themes style.css file.
  *
  * @package    Polymer
- * @version    0.1
+ * @version    0.3
  * @author     Gaurav Pareek <grv@magikpress.com>
  * @copyright  Copyright (c) 2014, Gaurav Pareek
  * @author     Ruairi Phelan <rory@cyberdesigncraft.com>
