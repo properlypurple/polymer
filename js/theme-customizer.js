@@ -12,7 +12,7 @@
 			$('#menu-primary, #menu-primary .search-form > div, #footer, .audio-shortcode-wrap, .media-shortcode-extend .media-info, .media-info-toggle, .entry-content .media-info-toggle, .media-info-toggle:hover, .media-info-toggle:focus, .wp-audio-shortcode.mejs-container, .mejs-controls, .mejs-volume-button .mejs-volume-slider, .mejs-overlay-play .mejs-overlay-button:after, .mejs-time-rail .mejs-time-float, .wp-playlist-dark, #menu-primary li li a, #menu-secondary li li a, #menu-primary li li a:hover, #menu-secondary li li a:hover, #menu-primary ul ul li a:hover, #menu-secondary ul ul li a:hover, #menu-primary ul ul li a:focus, #menu-secondary ul ul li a:focus, #menu-primary li li a, #menu-secondary li li a, #menu-primary .search-form > div')
         .css('background-color', newval );
 
-      $('.entry a, .widget a, #menu-secondary li a').css('color', newval );
+      $('.entry a, .widget a, #menu-secondary-items > li > a').css('color', newval );
 
       $('#menu-primary li li a,	#menu-secondary li li a').css('border-top-color', newval);
 
