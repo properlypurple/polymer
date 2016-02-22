@@ -1,8 +1,8 @@
 /**
  * Theme Name: Polymer
  * Theme URI: http://themehybrid.com/themes/polymer
- * Description: A Child Theme for Stargazer inpired by material design
- * Version: 0.3.1
+ * Description: A Child Theme for Stargazer inpired by material design. Support is now provided at themehybrid.com
+ * Version: 0.3.2
  * Author: Gaurav Pareek
  * Author URI: http://grv.rocks
  * Text Domain: polymer
@@ -145,4 +145,15 @@ textarea,
 
 #menu-social li a:hover:before {
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+}
+
+.sidebar .widget li {
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	list-style-type: '\00bb  ';
+}
+
+#footer .credit {
+	font-weight: 400;
 }

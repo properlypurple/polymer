@@ -6,3 +6,5 @@ A Child Theme for Hybrid Core's Stargazer, inspired by colours from Material des
 - Justin Tadlock for [Stargazer](https://wordpress.org/themes/stargazer)
 - Ruairi Phelan for [Kepler](https://wordpress.org/themes/kepler)
 
+###Support
+All support is now provided at http://themehybrid.com
